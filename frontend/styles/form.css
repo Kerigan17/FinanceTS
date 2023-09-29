@@ -1,0 +1,22 @@
+h1 {
+    color: #052C65!important;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.form-signin {
+    max-width: 397px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin label {
+    color: #6C757D;
+}
+
+.form-check:hover {
+    cursor: pointer;
+}

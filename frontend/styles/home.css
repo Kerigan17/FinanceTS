@@ -1,0 +1,23 @@
+
+.home-content-diagrams {
+    margin-left: 24px;
+    text-align: center;
+}
+
+.diagram-title {
+    color: #290661;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.line {
+    width: 1px;
+    height: 450px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+#dashboard-collapse li {
+    padding: 0;
+}

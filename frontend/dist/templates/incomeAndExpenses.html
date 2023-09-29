@@ -1,0 +1,49 @@
+<section class="content-block">
+  <h1 id="body-title"></h1>
+  <div class="block-actions d-flex gap-3 mb-5">
+    <a href="#/create-income-expense" id="income" class="create">Создать доход</a>
+    <a href="#/create-income-expense" id="expense" class="cancel">Создать расход</a>
+  </div>
+  <div class="sort d-flex align-items-center gap-3 mb-5">
+    <ul id="sort-list" class="d-flex list-unstyled gap-3 mb-0">
+      <li>Сегодня<span>all</span></li>
+      <li>Неделя<span>week</span></li>
+      <li>Месяц<span>month</span></li>
+      <li>Год<span>year</span></li>
+      <li class="active">Все<span>all</span></li>
+      <li>Интервал<span>interval</span></li>
+    </ul>
+    <div class="interval d-flex gap-3">
+      с
+      <input class="me-3 interval-input" type="date" >
+      по
+      <input class="interval-input" type="date">
+    </div>
+  </div>
+  <div class="table-info">
+    <table>
+      <thead>
+      <tr>
+        <td>№ операции</td> <td>Тип</td> <td>Категория</td> <td>Сумма</td> <td>Дата</td> <td>Комментарий</td>
+      </tr>
+      </thead>
+
+      <tbody id="table-body">
+
+      </tbody>
+    </table>
+  </div>
+
+  <div id="popup" class="popup align-items-center justify-content-center position-absolute">
+    <div class="popup-block">
+      <div class="popup-title">
+        Вы действительно хотите удалить операцию?
+      </div>
+      <div class="block-actions">
+        <button id="yesDelete" class="create">Да, удалить</button>
+        <button id="noDelete" class="cancel">Не удалять</button>
+      </div>
+    </div>
+  </div>
+</section>
+

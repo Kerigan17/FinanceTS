@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Title</title>
+    <link rel="shortcut icon" href="#">
+    <link id="styles" rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+
+<div id="sidebar" class="sidebar flex-column flex-shrink-0 p-3 position-fixed" style="width: 218px; height: 100vh">
+        <div class="d-flex mt-4 mb-2 justify-content-center">
+            <img src="/images/logo.png" alt="logo" width="98">
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto mt-5">
+            <li class="nav-item">
+                <a href="#/home" class="active-item nav-link d-flex align-items-center" aria-current="page">
+                    <svg class="me-2" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.336 2.253a1 1 0 0 1 1.328 0l9 8a1 1 0 0 1-1.328 1.494L20 11.45V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.55l-.336.297a1 1 0 0 1-1.328-1.494l9-8zM6 9.67V19h3v-5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5h3V9.671l-6-5.333-6 5.333zM13 19v-4h-2v4h2z"
+                              fill="#000000"/>
+                    </svg>
+                    Главная
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#/incAndExp" class="nav-link d-flex align-items-center">
+                    <svg class="me-2" width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4H2v12h4v4h16V8h-4V4h-2zm0 2v2H6v6H4V6h12zm-8 4h12v8H8v-8zm8 2h-4v4h4v-4z"
+                              fill="#000000"/>
+                    </svg>
+                    Доходы & Расходы
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center justify-content-between w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                    Категории
+                    <svg height="16px" width="16px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                    <path fill="#231F20" d="M15.563,40.836c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l15-15
+	                    c0.391-0.391,0.391-1.023,0-1.414l-15-15c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l14.293,14.293L15.563,39.422
+	                    C15.172,39.813,15.172,40.446,15.563,40.836z"/>
+                </svg>
+                </a>
+                <div class="collapse" id="dashboard-collapse" style="">
+                    <ul id="hidden" class="list-unstyled small">
+                        <li class="nav-item"><a href="#/income" class="nav-link">Доходы</a></li>
+                        <li class="nav-item"><a href="#/expense" class="nav-link">Расходы</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="dropdown position-relative">
+            <div id="balance-item" class="balance">Баланс: <span id="balance"></span><span>$</span></div>
+            <div id="popup-balance" class="position-absolute z-1">
+                <input id="balance-value" type="number" value="">
+                <button id="balance-btn" class="balance-btn save">Сохранить</button>
+                <button id="balance-cancel" class="balance-btn cancel">Отмена</button>
+            </div>
+            <hr>
+            <div class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/images/Icon.png" alt="icon" width="32" height="32" class="rounded-circle me-2">
+                <span id="fullname">Малько Александр</span>
+            </div>
+            <ul class="dropdown-menu text-small shadow">
+                <li><a href="#/login" class="dropdown-item">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div id="content">
+
+</div>
+
+<script src="scripts/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

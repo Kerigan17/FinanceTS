@@ -1,0 +1,252 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.link {
+    display: flex;
+}
+
+#link-button {
+    text-decoration: underline;
+    color: #0D6EFD;
+}
+
+#link-button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: #052C65;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+#content {
+    padding: 100px 60px;
+}
+
+.content-block {
+    margin-left: 218px;
+}
+
+.sidebar {
+    border-right: 1px solid #D9D9D9;
+}
+
+.nav li, .nav-item a {
+    color: #052C65;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav-item path {
+    fill: #052C65;
+}
+
+.nav-item a {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+#dashboard-collapse a {
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+.nav-link.active-item {
+    background: #0D6EFD;
+    color: white;
+}
+
+.nav-item:has(.active-item){
+    border: 1px solid #0D6EFD;
+    border-radius: 7px;
+}
+
+.nav-link.active-item {
+    border: 1px solid #0D6EFD;
+}
+
+.nav-link.active-item > a {
+    color: white;
+}
+
+.nav-link.active-item path {
+    fill: white;
+}
+
+.dropdown div:hover {
+    cursor: pointer;
+}
+
+.balance {
+    color: #052C65;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.balance span {
+    color: #0D6EFD;
+}
+
+.sort li {
+    color: #6C757D;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.457px;
+    border: 1px solid #6C757D;
+    padding: 9px 12px;
+    width: 100px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.sort span {
+    display: none;
+}
+
+.sort li:hover {
+    cursor: pointer;
+}
+.sort li:hover:not(.active) {
+    background-color: rgba(108, 117, 125, 0.1);
+}
+
+li.active {
+    background-color: #6C757D;
+    color: white;
+}
+
+.interval input {
+    border: none;
+    border-bottom: 1px solid #6C757D;
+    width: 100px;
+    outline: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+.balance-btn {
+    padding: 12px 16px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 5px;
+    box-sizing: border-box;
+    line-height: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.save {
+    background-color: #0D6EFD;
+}
+
+.cancel {
+    background-color: #DC3545;
+}
+
+.balance-btn:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#popup-balance {
+    display: none;
+    padding: 12px;
+    background-color: white;
+    gap: 10px;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    top: 0;
+}
+
+#balance-value {
+    width: fit-content;
+    appearance: none;
+    padding: 7px 16px;
+    border: 1px solid #CED4DA;
+    outline: none;
+    border-radius: 4px;
+    color: #000;
+}

@@ -1,0 +1,34 @@
+<section class="content-block">
+    <h1 id="body-title"></h1>
+        <div class="sort d-flex align-items-center gap-3">
+            <ul id="sort-list" class="d-flex list-unstyled gap-3 mb-0">
+                <li>Сегодня<span>all</span></li>
+                <li>Неделя<span>week</span></li>
+                <li>Месяц<span>month</span></li>
+                <li>Год<span>year</span></li>
+                <li class="active">Все<span>all</span></li>
+                <li>Интервал<span>interval</span></li>
+            </ul>
+            <div class="interval d-flex gap-3">
+                с
+                <input class="me-3 interval-input" type="date">
+                по
+                <input class="interval-input" type="date" placeholder="Дата">
+            </div>
+        </div>
+        <div class="home-content-diagrams pt-5 d-flex gap-5">
+            <div class="diagram" style="width: 437px">
+                <div class="diagram-title mb-3">Доходы</div>
+                <div class="diagram-image">
+                    <canvas id="incomeDiagram" class="myChart"></canvas>
+                </div>
+            </div>
+            <div class="line mt-5"></div>
+            <div class="diagram" style="width: 437px">
+                <div class="diagram-title mb-3">Расходы</div>
+                <div class="diagram-image">
+                    <canvas id="expensiveDiagram" class="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+</section>
